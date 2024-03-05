@@ -1,0 +1,372 @@
+/* COMANDOS GERAIS */
+body {
+  background-color: #000;
+}
+
+header {
+  padding: 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 15) 5%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  width: 101.1%;
+  top: 0;
+  z-index: 2;
+}
+
+header img {
+  width: 150px;
+}
+
+.btn-custom-white {
+  background-color: #fff;
+  margin-right: 5px;
+}
+
+.btn-custom-white:hover {
+  opacity: 0.8;
+}
+
+.btn-custom-translucent {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.btn-custom-translucent:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.btn-custom-round {
+  padding: 5px 9px !important;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+span.classificação {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #7e7b7b;
+  padding: 2px 6px;
+}
+
+/* Botão de Próximo 
+
+#btn-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 3;
+  align-content: center;
+}
+
+*/
+
+/* Model - Temporadas */
+
+div select.form-control {
+  background: #333333 !important;
+  border: none;
+}
+
+/* PÁGINA DE LOGIN */
+.bg_filmes {
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#caixa_login {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 48px;
+  margin-top: 150px;
+}
+
+div input.form-control {
+  background: #333333;
+  border: none;
+}
+
+body .termos {
+  font-size: smaller;
+}
+
+body .creditos {
+  font-size: x-small;
+}
+
+/* PÁGINA HOME */
+.menu_list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 7px;
+}
+
+.menu_list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.menu_list li a {
+  color: #fff;
+}
+
+#hero {
+  height: 700px;
+  background-image: url(../assets/capa-oppenheimer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+#hero::after {
+  content: "";
+  width: 100%;
+  height: 250px;
+  display: block;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: calc(700px - 250px);
+}
+
+#hero_infos {
+  padding: 0;
+  margin-top: 170px;
+  z-index: 3;
+  position: relative;
+}
+
+#hero_infos img.logo {
+  margin-bottom: 10px;
+  width: 500px;
+}
+
+div.facts span.certification {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+}
+
+#hero_infos h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#hero_infos h1 img {
+  width: 40px;
+  margin-top: -10px;
+}
+
+#main-content {
+  margin-top: 700px;
+}
+
+.movie_list {
+  overflow-x: scroll;
+  list-style: none;
+  white-space: nowrap;
+  padding: 20px 0;
+  border: 1px solid transparent;
+  display: block;
+}
+
+.movie_list::-webkit-scrollbar {
+  display: none;
+}
+
+.movie {
+  display: inline-block;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow: auto;
+  border: 1px solid transparent;
+  overflow-y: hidden;
+}
+
+.movie p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #7e7b7b;
+}
+
+.movie:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  z-index: 999;
+  transition: 0.5s;
+}
+
+.movie:hover .movie_info {
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.movie:first-child {
+  margin-left: 100px;
+}
+
+.movie_info {
+  background-color: #171717;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.movie_info .col-12 {
+  margin-top: 5px;
+}
+
+.movie_info .col-12:first-child {
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+
+.movie_info p {
+  color: #7e7b7b;
+  font-size: 12px;
+}
+
+.movie_info p text {
+  color: #fff;
+}
+
+section {
+  margin-bottom: -100px;
+  position: relative;
+}
+
+section:hover {
+  z-index: 9;
+}
+
+/* Modal */
+.modal-dialog,
+.modal-content {
+  background: #171717;
+}
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+/* Modal Avatar */
+.modal-hero-avatar {
+  height: 300px;
+  background-image: url(../assets/modal/avatar2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.modal-hero-avatar::after {
+  content: "";
+  width: 100%;
+  height: 200px;
+  display: block;
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0) 0%, #171717 100%);
+  position: absolute;
+  left: 0;
+  margin-top: -180px;
+  z-index: 1;
+}
+
+.modal-hero-avatar img {
+  width: 250px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 120px;
+}
+
+.modal-hero-infos {
+  position: relative;
+  z-index: 2;
+}
+
+.modal-hero-infos button:first-child {
+  margin-right: 20px;
+}
+
+.filme_descricao {
+  font-size: 15px;
+  color: #fff;
+}
+
+.elenco {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.elenco text {
+  color: #fff;
+}
+
+#lista_trailers {
+  list-style: none;
+  padding: 0;
+  transition: 0.5s;
+}
+
+#lista_trailers li:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  transition: 0.5s;
+}
+
+#lista_trailers li {
+  padding: 20px;
+}
+
+#lista_trailers li p {
+  font-size: 13px;
+}
+
+/* Modal Alice in Borderland */
+.modal-hero-borderland {
+  height: 300px;
+  background-image: url(../assets/modal/aliceinborderland2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.modal-hero-borderland::after {
+  content: "";
+  width: 100%;
+  height: 200px;
+  display: block;
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0) 0%, #171717 100%);
+  position: absolute;
+  left: 0;
+  margin-top: -220px;
+  z-index: 1;
+}
+
+.modal-hero-borderland img {
+  width: 250px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 120px;
+}
